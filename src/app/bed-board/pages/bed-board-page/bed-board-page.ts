@@ -7,6 +7,8 @@ import { BedLegend } from '../../components/bed-legend/bed-legend';
 import { BedStore } from '../../../core/services/bed-store';
 import { Patient } from '../../../patients/services/patient';
 import { Audit } from '../../../audit/services/audit';
+import { OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-bed-board-page',
@@ -14,10 +16,13 @@ import { Audit } from '../../../audit/services/audit';
   templateUrl: './bed-board-page.html',
   styleUrl: './bed-board-page.css',
 })
-export class BedBoardPage {
+export class BedBoardPage implements OnInit   {
   constructor(
     private bedStore: BedStore,
     private patientService: Patient,
     private auditService: Audit
   ){}
+  ngOnInit(): void {
+      this.bedStore.init();
+  }
 }
