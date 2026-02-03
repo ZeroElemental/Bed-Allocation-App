@@ -1,8 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { PatientRow } from '../patient-row/patient-row';
 
 @Component({
   selector: 'app-patient-table',
-  imports: [],
+  imports: [CommonModule,PatientRow],
   templateUrl: './patient-table.html',
   styleUrl: './patient-table.css',
 })
