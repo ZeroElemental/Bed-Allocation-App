@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Admission } from '../../services/admission';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-admit-patient-dialog',
@@ -7,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './admit-patient-dialog.css',
 })
 export class AdmitPatientDialog {
-
+constructor(private admissionService: Admission,
+  private dialogRef: MatDialogRef<AdmitPatientDialog>
+){}
 }

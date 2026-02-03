@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { PatientFilter } from '../../components/patient-filter/patient-filter';
 import { PatientTable } from '../../components/patient-table/patient-table';
+import { Patient } from '../../services/patient';
 
 @Component({
   selector: 'app-patient-list-page',
@@ -10,5 +11,5 @@ import { PatientTable } from '../../components/patient-table/patient-table';
   styleUrl: './patient-list-page.css',
 })
 export class PatientListPage {
-
+constructor(private patientService: Patient){}
 }

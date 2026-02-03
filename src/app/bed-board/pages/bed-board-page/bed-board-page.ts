@@ -10,7 +10,7 @@ import { Audit } from '../../../audit/services/audit';
 
 @Component({
   selector: 'app-bed-board-page',
-  imports: [CommonModule,PatientSearchPanel,WardTabs,ActivitySidebar,BedLegend,BedStore],
+  imports: [CommonModule,PatientSearchPanel,WardTabs,ActivitySidebar,BedLegend],
   templateUrl: './bed-board-page.html',
   styleUrl: './bed-board-page.css',
 })

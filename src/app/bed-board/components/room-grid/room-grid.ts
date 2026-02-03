@@ -9,5 +9,5 @@ import { BedTile } from '../bed-tile/bed-tile';
   styleUrl: './room-grid.css',
 })
 export class RoomGrid {
-
+constructor(){}
 }
